@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+body{
+    user-select: none;
+    background-color:#161212;
+}
+.outer_container2{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:150px;
+    min-width: 600px;
+}
+.open_boxes{
+    min-width: 500px;
+    flex-basis: 30%;
+    margin-left:30%;
+    margin-right:30%;
+    display:flex;
+    flex-wrap:wrap;
+    background-color:#8CEFEF;
+    justify-content: space-evenly;
+    align-content: space-around;
+    border-radius: 15px;
+    border:0;
+    box-shadow: 10px 10px 30px rgb(235, 250, 33),0px 0px 40px rgb(235, 22, 22);
+}
+.box_button{
+    border:0;
+    flex-basis:30%;
+    min-width: 150px;
+    /* max-width: 150px; */
+    background-color:white;
+    min-height: 150px;
+    width:30px;
+    margin-bottom: 15px;
+    border-radius:15px;
+}
+.box_button:nth-child(1){
+    margin-top:15px;
+}
+.box_button:nth-child(2){
+    margin-top:15px;
+}
+.box_button:nth-child(3){
+    margin-top:15px;
+}
+.stop_playing{
+    margin:25px 0;
+    flex-basis: 25%;
+    min-width: 200px;
+    border:0;
+    border-radius:15px;
+    background-color:rgb(248, 126, 146);
+    font-family: Mansalva;
+    font-size: 1.3rem;
+    line-height: 0;
+    font-weight: bold;
+    color:rgba(73, 59, 201, 0.671);
+    outline:none;
+    box-shadow: 0 0 20px rgb(255, 255, 255), inset 0 0 35px rgb(199, 176, 179);
+
+}
+.stop_playing:hover{
+    box-shadow: inset 0 0 35px rgb(199, 176, 179);
+    box-shadow: 0 0 25px rgb(228, 202, 202), 5px 5px 10px rgba(250, 125, 244, 0.849);
+}
+.stop_playing:active{
+    box-shadow: inset 0 0 35px rgb(199, 176, 179);
+    box-shadow: 1px 3px 10px white;
+}
+.box_button:hover{
+    box-shadow: 0 0 15px rgb(26, 130, 199);
+}
+.box_button:active{
+    box-shadow: 0 0 15px rgb(37, 37, 39);
+ 
+}
+.box_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* real-time through javascript */
+.x{
+    font-size:3.8rem;
+    line-height: 0;
+    font-family: "Spicy Rice",cursive;
+    color:black;
+}
+.o{
+    line-height: 0;
+    font-size:3.8rem;
+    font-family: "Spicy Rice",cursive;
+    color:red;
+}
+
+.outer_container2_new{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:150px;
+    min-width: 600px;
+    margin:0;
+}
+.players{
+    min-width: 400px;
+    flex-basis:40%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    /* border:1px solid lightcoral; */
+    color:white;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.player_1_name{
+    margin: 0;
+    flex-basis:50%;
+    font-family: "Mansalva";
+    font-size:1.3rem;
+    line-height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* border: 1px solid wheat; */
+}
+.player_1_name > :nth-child(1){
+    flex:100%;
+    min-width: 150px;
+    text-align: center;
+    /* border:1px solid white; */
+}
+.player_1_name > :nth-child(2){
+    min-width: 150px;
+    font-size: 2.3rem;
+    flex:100%;
+    color:cadetblue;
+    text-align: center;
+}
+
+.player_2_name{
+    margin: 0;
+    flex-basis:50%;
+    font-family: "Mansalva";
+    font-size:1.3rem;
+    line-height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* border: 1px solid wheat; */
+}
+.player_2_name > :nth-child(1){
+    flex:100%;
+    text-align: center;
+    /* border:1px solid white; */
+}
+.player_2_name > :nth-child(2){
+    flex:100%;
+    text-align: center;
+    color:red;
+    font-size: 2.3rem;
+} 
+/* additional stuff for floating box */
+.floating_box{
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color:rgba(243, 238, 238, 0.733);
+        /* width:50%; */
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:background-color 1s ease-in;/*NOTICE THIS*/
+
+}
+.floating_box_container{
+    flex-basis: 45%;
+    background-color:rgb(63, 62, 62);
+    height:480px;
+    border-radius:15px;
+    box-shadow: 5px 10px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s ease;
+
+}
+.winning_message{
+    flex-basis: 100%;
+    text-align: center;
+    font-family: "Spicy Rice";
+    font-size:4.3rem;
+    line-height: 0;
+    min-width: 550px;
+    color:rgba(255, 255, 255, 0.801);
+    /* border:1px solid lightblue; */
+}
+.stop_playing_float{
+    margin:25px 0;
+    flex-basis: 30%;
+    min-width: 250px;
+    border:0;
+    border-radius:15px;
+    background-color:rgb(248, 38, 168);
+    font-family: Mansalva;
+    font-size: 2.3rem;
+    padding:0 15px;
+    line-height: 0;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.808);
+    outline:none;
+    box-shadow: 3px 7px 10px rgb(12, 12, 12), inset 0 0 35px rgb(199, 176, 179);
+
+}
+.stop_playing_float:hover{
+    box-shadow:  3px 7px 10px rgb(12, 12, 12),inset 0 0 45px rgb(228, 216, 216);
+   
+}
+.stop_playing_float:active{
+    box-shadow: 3px 7px 10px rgb(12, 12, 12),inset 0 0 35px rgb(153, 125, 125);
+}
+.toggle_off{
+    background:none;
+    transform:translateY(-900px);
+    /* transition:background-color 4s; */
+    /* transition: transform 2s ease; */
+}
+.toggle_off_container{
+    transform: translateY(-100px); 
+}
+.toggle_on{
+    transform: translateY(0px);
+    background-color:rgba(243, 238, 238, 0.733);/*provides the smooth transition of the background color*/
+}
+.toggle_on_container{
+    transform: translateY(0px);
+}
+@media (max-width:400px){
+    .toggle_off{
+        background-color:white;
+        transform: translateY(-1500px);
+    }
+}

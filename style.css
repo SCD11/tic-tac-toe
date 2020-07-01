@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+body{
+    user-select: none;
+    background-color:#161212;
+    background:url("2.jpg");
+    background-size:100%;
+}
+.outer_container{
+    color:white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border:0;
+    margin-bottom: 30px;
+}
+.heading{
+
+    color:rgb(215, 224, 224);
+    font-family: "Mansalva",cursive;
+    font-size:1.9rem;
+    text-align: center;
+    flex-basis: 100%;
+    line-height: 0;
+    margin:10px;
+    text-shadow: 3px 6px 15px black;
+    /* border:1px solid brown; */
+}
+.inner_container{
+    flex-basis:30%;
+    min-width: 400px;
+    max-width: 450px;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    /* border:1px solid white; */
+}
+.main_box{
+    flex-basis: 100%;
+    border-radius:15px;
+    background-color:#96EF8C;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    box-shadow: 0px 25px 25px rgb(0, 0, 0);
+}
+.main_box > h3{
+    margin:15px;
+    flex-basis: 100%;
+    text-align: center;
+    font-size:2.5rem;
+    font-family: "Mansalva",cursive;
+    color:rgba(255, 255, 255, 0.76);
+    /* border:1px solid black; */
+}
+.main_box > input{
+    flex-basis: 70%;
+    border-radius:15px;
+    outline:none;
+    border:0;
+    text-align: center;
+    padding-left:25px;
+    padding-right:25px;
+    font-size:1.2rem;
+    height:40px;
+    font-family: "Spicy Rice",cursive;
+    margin:15px;
+    color:rgba(12, 12, 12, 0.781);
+    background-color: rgba(248, 247, 247, 0.87);
+}
+.main_box :nth-child(1){
+    margin-top:35px;
+}
+.main_box :nth-child(5){
+    margin-bottom:50px;
+}
+.image_vs{
+    flex-basis: 100%;
+    display:flex;
+    justify-content: center;
+    
+}
+.image_vs > img{
+    width: 100px;
+    height:100px;
+    margin-bottom:15px;
+}
+.inner_container > button{
+    margin:15px 0;
+    flex-basis: 100%;
+    border:0;
+    border-radius:15px;
+    background-color:rgb(102, 213, 187);
+    font-family: "Spicy Rice",cursive;
+    font-size: 1.3rem;
+    line-height: 0;
+    color:rgba(0, 0, 0, 0.74);
+    font-weight: bold;
+    outline:none;
+    box-shadow: 0 20px 30px rgb(0, 0, 0);
+}
+/* .inner_container > button:hover{
+    box-shadow: 0 10px 25px rgb(3, 3, 3)
+} */
+.inner_container > button:active{
+    box-shadow: 1px 3px 20px rgb(17, 17, 17);
+}
+/* .main_box:hover{
+    box-shadow:0 25px 35px rgb(18, 20, 18);
+} */
+input:hover{
+    box-shadow: 0 0 10px lightslategray;
+}
+.heading:hover{
+    color:white;
+}
+@media (max-width:500px){
+    body{
+        background-color:white;
+        background:linear-gradient(to right, red,blue);
+    }
+    .heading{
+        font-weight: bold;
+        line-height: 0;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .inner_container{
+        flex-basis: 20%;
+        min-width: 300px;
+        /* max-width:350px; */
+    }
+    .main_box > h3{
+        margin:5px;
+    }
+    .main_box > input{
+        margin:0;
+    }
+    .main_box :nth-child(1){
+        margin-top:10px;
+    }
+    .main_box :nth-child(5){
+        margin-bottom:25px;
+    }
+}   
+ 
